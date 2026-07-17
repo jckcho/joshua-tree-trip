@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2026 뉴욕·워싱턴·나이아가라 가족여행 일정</title>
+<style>
+:root{
+  --navy:#16324f; --blue:#2f6fa5; --sky:#eaf3fb; --line:#d7e1ea;
+  --text:#24313d; --muted:#687887; --green:#e9f7ef; --warn:#fff4d6;
+  --card:#ffffff; --bg:#eef3f7;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Malgun Gothic",Arial,sans-serif;
+  line-height:1.55;
+}
+.wrap{max-width:1500px;margin:0 auto;padding:22px}
+.hero{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;border-radius:20px;padding:28px 30px;
+  box-shadow:0 12px 30px rgba(22,50,79,.18)
+}
+.hero h1{margin:0 0 8px;font-size:31px}
+.hero p{margin:4px 0}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.chip{
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.26);
+  border-radius:999px;padding:6px 11px;font-size:13px
+}
+.notice{
+  margin:16px 0;background:var(--warn);border-left:5px solid #e1a400;
+  border-radius:10px;padding:13px 16px;font-size:14px
+}
+.card{
+  background:var(--card);border-radius:17px;margin-top:18px;
+  overflow:hidden;box-shadow:0 8px 24px rgba(31,41,51,.08)
+}
+.card h2{
+  margin:0;padding:18px 20px;background:var(--navy);
+  color:#fff;font-size:21px
+}
+.scroll{overflow-x:auto}
+table{
+  width:100%;border-collapse:collapse;min-width:1280px;font-size:14px
+}
+thead th{
+  position:sticky;top:0;z-index:2;background:var(--navy);color:#fff;
+  padding:12px 10px;text-align:left;white-space:nowrap
+}
+tbody td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:hover{background:#f8fbfd}
+.day td{border-top:4px solid #9fb7cb}
+.date{font-weight:800;color:var(--navy);white-space:nowrap}
+.time{font-weight:700;white-space:nowrap}
+.place{font-weight:700}
+.move{white-space:nowrap}
+.maplink{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:30px;height:30px;border-radius:50%;text-decoration:none;
+  background:var(--sky);font-size:17px;border:1px solid #c9dceb
+}
+.maplink:hover{transform:translateY(-1px)}
+.gallery{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:18px
+}
+.photo{
+  margin:0;border:1px solid var(--line);border-radius:13px;
+  overflow:hidden;background:#fff
+}
+.photo img{display:block;width:100%;height:220px;object-fit:cover}
+.photo figcaption{padding:11px 12px}
+.photo strong{display:block;color:var(--navy);margin-bottom:3px}
+.section-title{
+  padding:15px 18px 0;font-size:18px;font-weight:800;color:var(--navy)
+}
+.checkgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:18px}
+.check{background:#f5f8fb;border-radius:12px;padding:15px}
+.check h3{margin:0 0 8px;color:var(--navy)}
+.check ul{margin:0;padding-left:20px}
+.tip{
+  margin:0 18px 18px;background:var(--green);border-left:5px solid #2c8b57;
+  border-radius:10px;padding:14px 16px
+}
+.footer{text-align:center;color:var(--muted);font-size:13px;margin:18px 0}
+.small{font-size:12px;color:var(--muted)}
+@media(max-width:1100px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+  .wrap{padding:10px}.hero h1{font-size:24px}
+  .gallery,.checkgrid{grid-template-columns:1fr}
+  .photo img{height:220px}
+}
+@media print{
+  body{background:#fff}.wrap{max-width:none;padding:0}
+  .hero,.card{box-shadow:none}
+  .gallery{grid-template-columns:repeat(4,1fr)}
+  .photo img{height:150px}
+  thead th{position:static}
+  @page{size:A3 landscape;margin:8mm}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section class="hero">
+  <h1>🗽 2026 뉴욕·워싱턴·나이아가라 가족여행</h1>
+  <p><strong>기간:</strong> 2026년 7월 20일(월) ~ 7월 25일(토)</p>
+  <p><strong>구성:</strong> 뉴욕 핵심 관광 · 워싱턴 DC 당일치기 · 나이아가라 1박 · JFK 귀환</p>
+  <div class="chips">
+    <span class="chip">가족 4명</span>
+    <span class="chip">도보 10분 이상은 Uber 우선</span>
+    <span class="chip">점심 한식 선호</span>
+    <span class="chip">7/23 Jersey City 렌터카 픽업</span>
+    <span class="chip">7/24 자정 전후 JFK 호텔 도착</span>
+  </div>
+</section>
+
+<div class="notice">
+  <strong>최종 확인:</strong> 브로드웨이 공연시간, Amtrak 승차권, Top of the Rock 예약시간,
+  Alamo 픽업·JFK 반납 조건, Wyndham Garden 주차비, Maid of the Mist 및 Cave of the Winds 운영시간은 출발 전 예약화면에서 다시 확인하세요.
+</div>
+
+<section class="card">
+<h2>📅 전체 일정</h2>
+<div class="scroll">
+<table>
+<thead>
+<tr>
+  <th>날짜</th><th>시간</th><th>장소</th><th>지도</th><th>예상소요</th><th>이동</th><th>관전포인트</th><th>비고</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="day">
+<td class="date">20-Jul<br/>월</td><td class="time">08:16</td>
+<td class="place">✈️ JFK 도착</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=JFK+Airport" target="_blank" title="Google Maps">📍</a></td>
+<td>-</td><td class="move">항공</td><td>뉴욕 가족여행 시작</td><td>수하물 수령 후 이동</td>
+</tr>
+<tr>
+<td></td><td class="time">09:15~10:30</td>
+<td class="place">Holiday Inn Express Midtown West 이동·짐 보관</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>약 1시간15분</td><td class="move">AirTrain + LIRR + 지하철/우버</td><td>체크인 전 캐리어 보관</td><td>객실 체크인 15:00</td>
+</tr>
+<tr>
+<td></td><td class="time">11:00~12:20</td>
+<td class="place">🚢 NYC Ferry</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=NYC+Ferry+Wall+Street+Pier+11" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간20분</td><td class="move">호텔→선착장 약 30분</td><td>자유의 여신상, 맨해튼 스카이라인</td><td>노선·탑승시간 최종 확인</td>
+</tr>
+<tr>
+<td></td><td class="time">12:30~13:10</td>
+<td class="place">Wall Street & Charging Bull</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Charging+Bull+New+York" target="_blank" title="Google Maps">📍</a></td>
+<td>40분</td><td class="move">도보 약 10분</td><td>뉴욕 금융가, 황소상 가족사진</td><td>대기 길면 짧게 촬영</td>
+</tr>
+<tr>
+<td></td><td class="time">13:15~13:45</td>
+<td class="place">9·11 Memorial</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=9%2F11+Memorial+New+York" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">도보 약 8~10분</td><td>추모 분수, One World Trade Center 외관</td><td>박물관 내부는 생략</td>
+</tr>
+<tr>
+<td></td><td class="time">14:00~15:00</td>
+<td class="place">🍜 코리아타운 한식 점심</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Koreatown+Manhattan" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">지하철 약 25분</td><td>가족 휴식</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">15:10~17:30</td>
+<td class="place">호텔 체크인·휴식</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>약 2시간20분</td><td class="move">우버/지하철</td><td>샤워, 시차 적응</td><td>첫날 무리하지 않기</td>
+</tr>
+<tr>
+<td></td><td class="time">18:20~18:50</td>
+<td class="place">브로드웨이 극장 이동·입장</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Broadway+Theatre+District+New+York" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">우버/도보</td><td>좌석·화장실 확인</td><td>공연시간에 맞춰 조정</td>
+</tr>
+<tr>
+<td></td><td class="time">19:00~21:30</td>
+<td class="place">🎭 브로드웨이 공연</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Broadway+Theatre+District+New+York" target="_blank" title="Google Maps">📍</a></td>
+<td>약 2시간30분</td><td class="move">-</td><td>가족 대표 문화 일정</td><td>예매 공연 기준</td>
+</tr>
+<tr>
+<td></td><td class="time">21:30~22:10</td>
+<td class="place">🌃 Times Square</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Times+Square" target="_blank" title="Google Maps">📍</a></td>
+<td>40분</td><td class="move">도보</td><td>전광판과 뉴욕 첫 야경</td><td>타임스퀘어는 이날 한 번만</td>
+</tr>
+<tr>
+<td></td><td class="time">22:10~22:25</td>
+<td class="place">호텔 복귀</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>15분</td><td class="move">Uber</td><td>즉시 휴식</td><td></td>
+</tr>
+
+<tr class="day">
+<td class="date">21-Jul<br/>화</td><td class="time">07:30~08:10</td>
+<td class="place">호텔 조식</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>40분</td><td class="move">호텔</td><td>워싱턴 이동 준비</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">09:30~10:20</td>
+<td class="place">Penn Station 이동·탑승 준비</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Penn+Station+New+York" target="_blank" title="Google Maps">📍</a></td>
+<td>50분</td><td class="move">지하철/우버</td><td>탑승구 확인</td><td>출발 40분 전 도착</td>
+</tr>
+<tr>
+<td></td><td class="time">11:16~14:46</td>
+<td class="place">🚆 Amtrak 뉴욕→워싱턴 DC</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Washington+Union+Station" target="_blank" title="Google Maps">📍</a></td>
+<td>3시간30분</td><td class="move">Amtrak</td><td>미국 동부 기차여행</td><td>예약시간 기준</td>
+</tr>
+<tr>
+<td></td><td class="time">15:05~15:40</td>
+<td class="place">Lincoln Memorial</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Lincoln+Memorial" target="_blank" title="Google Maps">📍</a></td>
+<td>35분</td><td class="move">Union Station→Uber</td><td>링컨 동상, Reflecting Pool</td><td>Uber ①</td>
+</tr>
+<tr>
+<td></td><td class="time">15:45~16:10</td>
+<td class="place">Korean War Veterans Memorial</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Korean+War+Veterans+Memorial" target="_blank" title="Google Maps">📍</a></td>
+<td>25분</td><td class="move">도보 약 3~5분</td><td>참전용사 조형물과 추모의 벽</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">16:20~16:40</td>
+<td class="place">World War II Memorial</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=World+War+II+Memorial+Washington+DC" target="_blank" title="Google Maps">📍</a></td>
+<td>20분</td><td class="move">도보 약 8~10분</td><td>중앙 분수와 기념기둥</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">16:50~17:40</td>
+<td class="place">🍽️ 늦은 점심</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Restaurants+near+White+House+Washington+DC" target="_blank" title="Google Maps">📍</a></td>
+<td>50분</td><td class="move">Uber</td><td>가족 식사·휴식</td><td>Uber ②</td>
+</tr>
+<tr>
+<td></td><td class="time">18:00~18:20</td>
+<td class="place">The White House</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=The+White+House" target="_blank" title="Google Maps">📍</a></td>
+<td>20분</td><td class="move">도보/짧은 이동</td><td>백악관 외부 기념사진</td><td>내부 관람 없음</td>
+</tr>
+<tr>
+<td></td><td class="time">18:30~18:50</td>
+<td class="place">U.S. Capitol</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=United+States+Capitol" target="_blank" title="Google Maps">📍</a></td>
+<td>20분</td><td class="move">Uber</td><td>국회의사당 돔과 정면</td><td>Uber ③</td>
+</tr>
+<tr>
+<td></td><td class="time">18:50~19:15</td>
+<td class="place">Union Station 복귀</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Washington+Union+Station" target="_blank" title="Google Maps">📍</a></td>
+<td>25분</td><td class="move">도보 약 15분</td><td>열차 탑승 준비</td><td>지치면 짧은 Uber</td>
+</tr>
+<tr>
+<td></td><td class="time">19:57~23:23</td>
+<td class="place">🚆 Amtrak 워싱턴→뉴욕</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Penn+Station+New+York" target="_blank" title="Google Maps">📍</a></td>
+<td>3시간26분</td><td class="move">Amtrak</td><td>뉴욕 복귀</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">23:25~23:45</td>
+<td class="place">호텔 복귀</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>20분</td><td class="move">Uber</td><td>취침</td><td></td>
+</tr>
+
+<tr class="day">
+<td class="date">22-Jul<br/>수</td><td class="time">05:00~08:00</td>
+<td class="place">⛪ 뉴저지 온누리교회 새벽예배·복귀</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=New+Jersey+Onnuri+Church" target="_blank" title="Google Maps">📍</a></td>
+<td>약 3시간</td><td class="move">Uber 왕복</td><td>새벽예배</td><td>가족은 호텔에서 취침</td>
+</tr>
+<tr>
+<td></td><td class="time">08:00~09:00</td>
+<td class="place">호텔 조식·휴식</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">호텔</td><td>가족과 합류</td><td>늦게 출발</td>
+</tr>
+<tr>
+<td></td><td class="time">09:30~10:30</td>
+<td class="place">🌳 Central Park 핵심 산책</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Central+Park+Zoo" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">지하철/우버</td><td>도심 속 공원 풍경</td><td>동물원 주변 중심</td>
+</tr>
+<tr>
+<td></td><td class="time">10:30~11:30</td>
+<td class="place">Central Park Zoo</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Central+Park+Zoo" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">도보</td><td>바다사자, 펭귄, 레서판다</td><td>아이들 중심</td>
+</tr>
+<tr>
+<td></td><td class="time">11:45~14:00</td>
+<td class="place">🏛️ The Metropolitan Museum of Art</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=The+Metropolitan+Museum+of+Art" target="_blank" title="Google Maps">📍</a></td>
+<td>2시간15분</td><td class="move">Uber 약 10분</td><td>덴두르 신전, 갑옷, 인상파</td><td>핵심 작품만</td>
+</tr>
+<tr>
+<td></td><td class="time">14:20~15:20</td>
+<td class="place">🍜 한식 점심</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Koreatown+Manhattan" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">Uber 약 15~20분</td><td>가족 휴식</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">15:40~16:10</td>
+<td class="place">Bryant Park</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Bryant+Park" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">지하철/우버</td><td>맨해튼 도심 공원</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">16:10~16:40</td>
+<td class="place">New York Public Library</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=New+York+Public+Library+Stephen+A+Schwarzman+Building" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">도보 약 1분</td><td>사자상, 메인 공간</td><td>내부 핵심만</td>
+</tr>
+<tr>
+<td></td><td class="time">16:50~17:20</td>
+<td class="place">Grand Central Terminal</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Grand+Central+Terminal" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">도보 약 8~10분</td><td>별자리 천장, 중앙 시계</td><td>세 장소 연속 동선</td>
+</tr>
+<tr>
+<td></td><td class="time">17:30~18:30</td>
+<td class="place">호텔 이동·저녁·휴식</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">Uber</td><td>나이아가라 운전 전 체력 비축</td><td>가져온 음식 활용</td>
+</tr>
+<tr>
+<td></td><td class="time">19:00~20:30</td>
+<td class="place">🌇 Top of the Rock</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Top+of+the+Rock" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간30분</td><td class="move">지하철/도보</td><td>일몰 전후 맨해튼 전망</td><td>시간 지정 예약</td>
+</tr>
+<tr>
+<td></td><td class="time">20:30~20:50</td>
+<td class="place">Rockefeller Center Plaza</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Rockefeller+Center" target="_blank" title="Google Maps">📍</a></td>
+<td>20분</td><td class="move">도보</td><td>전망대 아래 광장 야경</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">21:00 전후</td>
+<td class="place">호텔 복귀·짐 정리</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>-</td><td class="move">Uber</td><td>다음 날 체크아웃 준비</td><td>충분히 수면</td>
+</tr>
+
+<tr class="day">
+<td class="date">23-Jul<br/>목</td><td class="time">07:00~08:00</td>
+<td class="place">호텔 조식·체크아웃</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Manhattan+Midtown+West" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">호텔</td><td>캐리어 3개 최종 확인</td><td>Bounce 불필요</td>
+</tr>
+<tr>
+<td></td><td class="time">08:30</td>
+<td class="place">Jersey City 렌터카 지점으로 출발</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=110+1st+St+Jersey+City+NJ+07302" target="_blank" title="Google Maps">📍</a></td>
+<td>약 50~60분</td><td class="move">지하철 + PATH</td><td>맨해튼 차량 운전 회피</td><td>여유 있게 출발</td>
+</tr>
+<tr>
+<td></td><td class="time">09:30~09:50</td>
+<td class="place">110 1st St, Jersey City 도착</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=110+1st+St+Jersey+City+NJ+07302" target="_blank" title="Google Maps">📍</a></td>
+<td>-</td><td class="move">Grove Street PATH→도보</td><td>예약·면허·신용카드 확인</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">10:00~10:30</td>
+<td class="place">🚗 Alamo 렌터카 픽업</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Alamo+110+1st+St+Jersey+City" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">-</td><td>Malibu급 차량·짐 적재 확인</td><td>큰 캐리어 2 + 작은 캐리어 1</td>
+</tr>
+<tr>
+<td></td><td class="time">10:30~13:00</td>
+<td class="place">나이아가라 방향 이동</td>
+<td><a class="maplink" href="https://www.google.com/maps/dir/?api=1&origin=110+1st+St+Jersey+City+NJ&destination=Wyndham+Garden+at+Niagara+Falls+443+Main+Street+Niagara+Falls+NY" target="_blank" title="Google Maps">📍</a></td>
+<td>약 2시간30분</td><td class="move">고속도로</td><td>뉴저지→펜실베이니아</td><td>교통상황에 따라 변동</td>
+</tr>
+<tr>
+<td></td><td class="time">13:00~14:00</td>
+<td class="place">점심·주유·화장실</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Rest+Area+I-80+Pennsylvania" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">휴게소/식당</td><td>운전자 휴식</td><td>점심은 이동 중 해결</td>
+</tr>
+<tr>
+<td></td><td class="time">14:00~18:00</td>
+<td class="place">나이아가라 이동</td>
+<td><a class="maplink" href="https://www.google.com/maps/dir/?api=1&origin=Pennsylvania&destination=Wyndham+Garden+at+Niagara+Falls+443+Main+Street+Niagara+Falls+NY" target="_blank" title="Google Maps">📍</a></td>
+<td>약 4시간</td><td class="move">고속도로</td><td>뉴욕주 북부 풍경</td><td>총 운전 약 7시간</td>
+</tr>
+<tr>
+<td></td><td class="time">18:00~19:00</td>
+<td class="place">Wyndham Garden at Niagara Falls 체크인·저녁</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Wyndham+Garden+at+Niagara+Falls+443+Main+Street" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">차량</td><td>휴식 및 짐 정리</td><td>체크인 16:00 이후</td>
+</tr>
+<tr>
+<td></td><td class="time">19:15~21:30</td>
+<td class="place">🌊 Niagara Falls 야경 산책</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Niagara+Falls+State+Park" target="_blank" title="Google Maps">📍</a></td>
+<td>약 2시간15분</td><td class="move">도보</td><td>American Falls, 전망대, 조명</td><td>체력에 따라 단축</td>
+</tr>
+<tr>
+<td></td><td class="time">21:30 이후</td>
+<td class="place">호텔 복귀·취침</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Wyndham+Garden+at+Niagara+Falls+443+Main+Street" target="_blank" title="Google Maps">📍</a></td>
+<td>-</td><td class="move">도보</td><td>다음 날 관광 준비</td><td></td>
+</tr>
+
+<tr class="day">
+<td class="date">24-Jul<br/>금</td><td class="time">07:00~08:00</td>
+<td class="place">조식·체크아웃 준비</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Wyndham+Garden+at+Niagara+Falls+443+Main+Street" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">호텔</td><td>차량에 짐 적재</td><td>체크아웃 11:00까지</td>
+</tr>
+<tr>
+<td></td><td class="time">08:15~09:15</td>
+<td class="place">Goat Island · Terrapin Point</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Terrapin+Point+Niagara+Falls" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">차량 + 도보</td><td>Horseshoe Falls 미국 측 전망</td><td>아침에 비교적 한산</td>
+</tr>
+<tr>
+<td></td><td class="time">09:30~11:00</td>
+<td class="place">🚢 Maid of the Mist</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Maid+of+the+Mist+Niagara+Falls+NY" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간30분</td><td class="move">차량 + 도보</td><td>폭포 바로 앞 보트 체험</td><td>이날 최우선 일정</td>
+</tr>
+<tr>
+<td></td><td class="time">11:15~12:30</td>
+<td class="place">Cave of the Winds</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Cave+of+the+Winds+Niagara+Falls+NY" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간15분</td><td class="move">도보</td><td>폭포 물보라 체험</td><td>대기 길면 단축</td>
+</tr>
+<tr>
+<td></td><td class="time">12:40~13:40</td>
+<td class="place">점심</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Restaurants+near+Niagara+Falls+State+Park" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간</td><td class="move">도보/차량</td><td>출발 전 충분히 식사</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">13:45~15:30</td>
+<td class="place">Niagara Falls State Park 추가 산책·사진·기념품</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Niagara+Falls+State+Park" target="_blank" title="Google Maps">📍</a></td>
+<td>1시간45분</td><td class="move">도보</td><td>American Falls, 전망대, 가족사진</td><td>여유 있게 마무리</td>
+</tr>
+<tr>
+<td></td><td class="time">15:30~16:00</td>
+<td class="place">차량 복귀·화장실·주유</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Gas+Station+near+Niagara+Falls+State+Park" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">차량</td><td>장거리 출발 준비</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">16:00 전후</td>
+<td class="place">JFK 방향 출발</td>
+<td><a class="maplink" href="https://www.google.com/maps/dir/?api=1&origin=Wyndham+Garden+at+Niagara+Falls+443+Main+Street+Niagara+Falls+NY&destination=Hampton+Inn+NY-JFK" target="_blank" title="Google Maps">📍</a></td>
+<td>-</td><td class="move">차량</td><td>나이아가라를 충분히 본 뒤 출발</td><td>자정 전후 호텔 도착 목표</td>
+</tr>
+<tr>
+<td></td><td class="time">18:30 전후</td>
+<td class="place">휴게소 휴식</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Rest+Area+New+York+Thruway" target="_blank" title="Google Maps">📍</a></td>
+<td>20~30분</td><td class="move">고속도로</td><td>운전자 휴식</td><td>졸리면 반드시 추가 휴식</td>
+</tr>
+<tr>
+<td></td><td class="time">21:00 전후</td>
+<td class="place">저녁·주유</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Restaurants+along+I-80+New+Jersey" target="_blank" title="Google Maps">📍</a></td>
+<td>30~40분</td><td class="move">휴게소/식당</td><td>마지막 장거리 구간 전 휴식</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">23:30~00:30</td>
+<td class="place">Hampton Inn NY-JFK 도착·체크인</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Hampton+Inn+NY-JFK" target="_blank" title="Google Maps">📍</a></td>
+<td>-</td><td class="move">차량</td><td>공항 근처 마지막 숙박</td><td>렌터카는 다음 날 반납</td>
+</tr>
+
+<tr class="day">
+<td class="date">25-Jul<br/>토</td><td class="time">05:30~06:00</td>
+<td class="place">기상·짐 정리</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Hampton+Inn+NY-JFK" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">호텔</td><td>수하물 최종 확인</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">06:00~06:30</td>
+<td class="place">간단한 조식</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Hampton+Inn+NY-JFK" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">호텔</td><td>빠른 식사</td><td>조식 시작시간 확인</td>
+</tr>
+<tr>
+<td></td><td class="time">06:30~07:00</td>
+<td class="place">JFK Alamo 렌터카 반납센터 이동</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Alamo+Rent+A+Car+JFK+Airport" target="_blank" title="Google Maps">📍</a></td>
+<td>15~30분</td><td class="move">차량</td><td>주유 상태·차량 사진 확인</td><td>편도 반납</td>
+</tr>
+<tr>
+<td></td><td class="time">07:00~07:30</td>
+<td class="place">차량 반납·터미널 이동</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=JFK+Airport" target="_blank" title="Google Maps">📍</a></td>
+<td>30분</td><td class="move">셔틀/AirTrain</td><td>영수증 확인</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">07:30~08:15</td>
+<td class="place">체크인·보안검색</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=JFK+Airport" target="_blank" title="Google Maps">📍</a></td>
+<td>45분</td><td class="move">공항</td><td>탑승 준비</td><td></td>
+</tr>
+<tr>
+<td></td><td class="time">09:00~11:54</td>
+<td class="place">✈️ Delta 773 JFK→LAX</td>
+<td><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Los+Angeles+International+Airport" target="_blank" title="Google Maps">📍</a></td>
+<td>5시간54분</td><td class="move">항공</td><td>가족여행 종료</td><td>이후 Irvine 귀가</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="card">
+<h2>📸 뉴욕 주요 사진</h2>
+<div class="gallery">
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Statue%20of%20Liberty%20with%20One%20World%20Trade%20Center.jpg" alt="자유의 여신상과 맨해튼"/>
+<figcaption><strong>자유의 여신상</strong>NYC Ferry에서 바라보는 대표 풍경</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/1%20times%20square%20night%202013.jpg" alt="Times Square 야경"/>
+<figcaption><strong>Times Square</strong>브로드웨이 공연 후 보는 뉴욕 야경</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The%20Temple%20of%20Dendur%20MET%20DT563.jpg" alt="메트로폴리탄 미술관 덴두르 신전"/>
+<figcaption><strong>The Met</strong>핵심 동선의 대표 작품, 덴두르 신전</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/View%20of%20Empire%20State%20Building%20from%20Rockefeller%20Center%20New%20York%20City%20dllu.jpg" alt="Top of the Rock 전망"/>
+<figcaption><strong>Top of the Rock</strong>일몰과 맨해튼 야경을 함께 감상</figcaption>
+</figure>
+</div>
+</section>
+
+<section class="card">
+<h2>📸 워싱턴 DC 주요 사진</h2>
+<div class="gallery">
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lincoln%20Memorial%20at%20dusk.jpg" alt="Lincoln Memorial"/>
+<figcaption><strong>Lincoln Memorial</strong>링컨 동상과 Reflecting Pool</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://tile.loc.gov/storage-services/service/pnp/highsm/13200/13268v.jpg" alt="Korean War Veterans Memorial"/>
+<figcaption><strong>Korean War Memorial</strong>가족여행에서 의미 있는 추모 공간</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/White%20House%2002.jpg" alt="The White House"/>
+<figcaption><strong>The White House</strong>외부 관람과 기념사진</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/United%20States%20Capitol%20west%20front%20edit2.jpg" alt="U.S. Capitol"/>
+<figcaption><strong>U.S. Capitol</strong>돔과 정면 전경</figcaption>
+</figure>
+</div>
+</section>
+
+<section class="card">
+<h2>📸 나이아가라 주요 사진</h2>
+<div class="gallery">
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/American%20Falls%20with%20rainbow%20and%20the%20Maid%20of%20the%20Mist.jpg" alt="American Falls와 Maid of the Mist"/>
+<figcaption><strong>American Falls</strong>무지개와 함께 보는 대표 풍경</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Aerial%20view%20of%20the%20Canadian%20Falls%20%28Horseshoe%20Falls%29%20and%20the%20Hornblower%20Niagara%20Cruises%20boat%3B%20Niagara%20Falls.JPG" alt="Horseshoe Falls"/>
+<figcaption><strong>Horseshoe Falls</strong>Terrapin Point에서 보는 장대한 폭포</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Maid%20of%20the%20Mist%20-%20pot-o-gold.jpg" alt="Maid of the Mist"/>
+<figcaption><strong>Maid of the Mist</strong>이번 여행의 가장 핵심적인 체험</figcaption>
+</figure>
+<figure class="photo">
+<img onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27700%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2316324f%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%232f6fa5%27/%3E%0A%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27url%28%23g%29%27/%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2747%25%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-size%3D%2742%27%20font-family%3D%27Arial%27%3ETravel%20Photo%3C/text%3E%0A%3Ctext%20x%3D%2750%25%27%20y%3D%2756%25%27%20text-anchor%3D%27middle%27%20fill%3D%27%23dceaf5%27%20font-size%3D%2724%27%20font-family%3D%27Arial%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%B6%88%EB%9F%AC%EC%98%A4%EC%A7%80%20%EB%AA%BB%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4%3C/text%3E%0A%3C/svg%3E'" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cave%20of%20the%20Winds%20Niagara%20Falls.jpg" alt="Cave of the Winds"/>
+<figcaption><strong>Cave of the Winds</strong>폭포 물보라를 직접 느끼는 코스</figcaption>
+</figure>
+</div>
+</section>
+
+<section class="card">
+<h2>🧳 나이아가라 준비물</h2>
+<div class="checkgrid">
+<div class="check">
+<h3>물놀이·폭포 체험</h3>
+<ul>
+<li>젖어도 되는 운동화 또는 워터슈즈</li>
+<li>여벌 양말·속옷·얇은 여벌옷</li>
+<li>휴대폰 방수팩·지퍼백</li>
+<li>작은 수건 또는 극세사 타월</li>
+</ul>
+</div>
+<div class="check">
+<h3>장거리 운전</h3>
+<ul>
+<li>생수와 간단한 간식</li>
+<li>보조배터리·충전 케이블</li>
+<li>선글라스와 목베개</li>
+<li>졸리면 즉시 휴게소에서 휴식</li>
+</ul>
+</div>
+<div class="check">
+<h3>예약·신분 확인</h3>
+<ul>
+<li>운전면허증·신용카드</li>
+<li>Alamo 예약화면</li>
+<li>호텔·관광지 예약화면</li>
+<li>가족 신분증과 여권</li>
+</ul>
+</div>
+</div>
+<div class="tip">
+<strong>핵심:</strong> 7월 24일은 Maid of the Mist를 최우선으로 하고, 대기시간이 길어질 경우 Cave of the Winds 또는 추가 산책 시간을 줄이면 됩니다.
+JFK 호텔 도착 목표는 자정 전후지만, 운전 피로가 크면 도착시간보다 안전을 우선하세요.
+</div>
+</section>
+
+<div class="footer">
+작성일: 2026-07-16 · 브라우저에서 인쇄 또는 PDF 저장 가능 · 사진은 Wikimedia Commons 온라인 이미지
+</div>
+
+</div>
+</body>
+</html>
